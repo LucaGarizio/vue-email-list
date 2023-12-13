@@ -10,14 +10,14 @@
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
-    <div id="app">
-        <h1>Random E-mail</h1>
-        <div class="email-container"> 
-            <ol v-show="emails.length >= 10">
-                <li v-for="(email, i) in emails" :key="i">{{email}}</li>
-            </ol>
-        </div>
+<div id="app">
+    <h1>Random E-mails</h1>
+    <div v-show="emails.length >=10" class="email-container">
+        <ol >
+            <li v-for="(email, i) in emails" :key="i">{{email}}</li>
+        </ol>
     </div>
+</div>
 
     <script src="js/main.js"></script>
 </body>
