@@ -27,8 +27,10 @@ createApp({
     },
     // dalla mail ricevuta dal server esterno ciclala fino a quando non ne ottieni 10
     createEmails() {
-      for (let i = 0; i < 10; i++) {
+      let i = 0
+      while (i < 10) {
         this.getEmail();
+        i++
       }
     }
   },
